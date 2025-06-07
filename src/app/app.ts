@@ -20,18 +20,29 @@ export class App implements OnInit {
 
   ngOnInit(): void {
     this.meta.addTags([
-      { name: 'description', content: 'hamburguesas al mejor precio' },
+      {
+        name: 'description',
+        content:
+          'isfruta las mejores hamburguesas artesanales en Shadow Burguer Shop. Hechas con ingredientes frescos y 100% sabor.',
+      },
       {
         name: 'keywords',
-        content: 'Angular, TypeScript, hamburguesas, hamburguesas baratas',
+        content:
+          'hamburguesas, hamburguesas baratas, shadow burguer shop, comida rapida',
       },
       { name: 'author', content: 'Bryan' },
       { name: 'robots', content: 'index, follow' },
       { name: 'revisit-after', content: '1 days' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
-      { property: 'og:title', content: 'Shadow Burguer Shop | Home' },
+      {
+        property: 'og:title',
+        content: 'Shadow Burguer Shop  | Hamburgesas artesanales',
+      },
       { property: 'og:description', content: 'hamburguesas al mejor precio' },
-      // { property: 'og:image', content: 'https://tuapp.com/imagen.jpg' },
+      {
+        property: 'og:image',
+        content: 'https://shadow-burguer-shop.onrender.com/logo.png',
+      },
     ]);
   }
 }
