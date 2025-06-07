@@ -1,0 +1,20 @@
+.hero {
+  height: 65vh;
+  background-image: url("/shadow-real-state.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+.hero-content {
+  max-width: 1200px;
+  background: #0000007e;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+}
