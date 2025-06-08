@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-newsletter',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './newsletter.html',
-  styleUrl: './newsletter.css'
+  styleUrl: './newsletter.css',
 })
-export class Newsletter {
-
-}
+export class Newsletter {}

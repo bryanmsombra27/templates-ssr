@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-newest',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './newest.html',
-  styleUrl: './newest.css'
+  styleUrl: './newest.css',
 })
-export class Newest {
-
-}
+export class Newest {}
