@@ -1,0 +1,19 @@
+.hero {
+  height: 65vh;
+  /*background-color: #00000039;
+  */
+  background-image: url("/banner.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  background-color: #1e1e1ea9;
+  background-blend-mode: darken;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+}
