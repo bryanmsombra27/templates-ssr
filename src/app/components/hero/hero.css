@@ -1,0 +1,14 @@
+.hero {
+  /* background-image: url("/banner.jpg"); */
+  mix-blend-mode: saturation;
+  background: url("/banner.jpg"), #000;
+  background-repeat: no-repeat;
+  height: 60vh;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
