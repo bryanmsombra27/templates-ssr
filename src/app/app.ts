@@ -7,10 +7,21 @@ import { Steps } from './components/steps/steps';
 import { Ofert } from './components/ofert/ofert';
 import { Stadistics } from './components/stadistics/stadistics';
 import { Testimonials } from './components/testimonials/testimonials';
+import { CommonQuestions } from './components/common-questions/common-questions';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Hero, Brands, Card, Steps, Ofert, Stadistics, Testimonials],
+  imports: [
+    Header,
+    Hero,
+    Brands,
+    Card,
+    Steps,
+    Ofert,
+    Stadistics,
+    Testimonials,
+    CommonQuestions,
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
