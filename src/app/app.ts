@@ -5,10 +5,12 @@ import { Brands } from './components/brands/brands';
 import { Card } from './components/card/card';
 import { Steps } from './components/steps/steps';
 import { Ofert } from './components/ofert/ofert';
+import { Stadistics } from './components/stadistics/stadistics';
+import { Testimonials } from './components/testimonials/testimonials';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Hero, Brands, Card, Steps, Ofert],
+  imports: [Header, Hero, Brands, Card, Steps, Ofert, Stadistics, Testimonials],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
