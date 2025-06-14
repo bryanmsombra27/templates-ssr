@@ -4,10 +4,11 @@ import { Hero } from './components/hero/hero';
 import { Brands } from './components/brands/brands';
 import { Card } from './components/card/card';
 import { Steps } from './components/steps/steps';
+import { Ofert } from './components/ofert/ofert';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Hero, Brands, Card, Steps],
+  imports: [Header, Hero, Brands, Card, Steps, Ofert],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
