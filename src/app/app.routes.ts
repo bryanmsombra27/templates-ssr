@@ -12,7 +12,11 @@ export const routes: Routes = [
   },
   {
     path: 'us',
+    loadComponent: () => import('./pages/us/us').then((m) => m.Us),
+  },
+  {
+    path: 'portfolio',
     loadComponent: () =>
-      import('./pages/us/us').then((m) => m.Us),
+      import('./pages/portfolio/portfolio').then((m) => m.Portfolio),
   },
 ];
