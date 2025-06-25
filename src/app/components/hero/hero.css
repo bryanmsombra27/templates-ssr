@@ -1,0 +1,29 @@
+.hero {
+  --primary-gradient: #0e376b;
+  --secondary-gradient: #389078;
+  background-attachment: fixed;
+  background-image: url("/hero.png"),
+    linear-gradient(
+      90deg,
+      var(--primary-gradient),
+      80%,
+      var(--secondary-gradient)
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: soft-light, luminosity;
+  min-height: 80vh;
+}
+
+.btn-gradient {
+  font-weight: bold;
+  cursor: pointer;
+  --primary-color: #0f4561;
+  --secondary-color: #3b9a3f;
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  box-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+}
