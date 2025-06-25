@@ -1,0 +1,9 @@
+.bg-gradient {
+  --primary-color: #0f4561;
+  --secondary-color: #3eb244;
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
