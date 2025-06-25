@@ -1,0 +1,106 @@
+<section
+    class="absolute  container mx-auto p-6 bg-[#00000038] top-0 w-full h-full   right-0 flex items-end justify-center "
+    [ngClass]="{'flex':isOpen(),'hidden':!isOpen()}">
+
+    <div class="bg-white flex flex-col items-center p-10 rounded-2xl">
+        <div class="flex justify-end w-full">
+            <i class="fa-solid fa-times text-4xl text-red-400 p-4 bg-red-50 rounded-full cursor-pointer"
+                (click)="toggleModal()"></i>
+        </div>
+
+
+
+        <p class="text-center text-3xl font-bold text-[#173849]">{{date()}}</p>
+
+        <input type="date" #datepicker (change)="setSelectedDate($event)" class="border p-4 rounded-2xl mt-5">
+
+        <div class="grid grid-cols-3 gap-5 mt-10">
+            <article
+                class="p-8 border border-l-8 border-red-400 rounded-xl flex flex-col gap-4 justify-center items-center w-full">
+                <div class="text-center flex items-center gap-4">
+                    <i class="fa-solid fa-clock"></i>
+                    <span class="text-xl  font-bold text-[#173849]">09:00 - 10:00</span>
+                </div>
+
+                <span class="text-red-500 px-4 py-2 bg-red-50 rounded-4xl font-bold">Ocupado</span>
+
+                <span class="bg-gray-300 text-white px-8 py-2 rounded-4xl w-full cursor-pointer">No disponible</span>
+
+            </article>
+            <article
+                class="p-8 border border-l-8 border-red-400 rounded-xl flex flex-col gap-4 justify-center items-center w-full">
+                <div class="text-center flex items-center gap-4">
+                    <i class="fa-solid fa-clock"></i>
+                    <span class="text-xl  font-bold text-[#173849]">09:00 - 10:00</span>
+                </div>
+
+                <span class="text-red-500 px-4 py-2 bg-red-50 rounded-4xl font-bold">Ocupado</span>
+
+                <span class="bg-gray-300 text-white px-8 py-2 rounded-4xl w-full cursor-pointer">No disponible</span>
+
+            </article>
+            <article
+                class="p-8 border border-l-8 border-green-400 rounded-xl flex flex-col gap-4 justify-center items-center w-full">
+                <div class="text-center flex items-center gap-4">
+                    <i class="fa-solid fa-clock"></i>
+                    <span class="text-xl  font-bold text-[#173849]">09:00 - 10:00</span>
+                </div>
+
+                <span class="text-green-500 px-4 py-2 bg-green-50 rounded-4xl font-bold">Disponible</span>
+
+                <span
+                    class="bg-green-700 text-center text-white px-8 py-2 rounded-4xl w-full cursor-pointer">Reservar</span>
+
+            </article>
+            <article
+                class="p-8 border border-l-8 border-green-400 rounded-xl flex flex-col gap-4 justify-center items-center w-full">
+                <div class="text-center flex items-center gap-4">
+                    <i class="fa-solid fa-clock"></i>
+                    <span class="text-xl  font-bold text-[#173849]">09:00 - 10:00</span>
+                </div>
+
+                <span class="text-green-500 px-4 py-2 bg-green-50 rounded-4xl font-bold">Disponible</span>
+
+                <span
+                    class="bg-green-700 text-center text-white px-8 py-2 rounded-4xl w-full cursor-pointer">Reservar</span>
+
+            </article>
+            <article
+                class="p-8 border border-l-8 border-green-400 rounded-xl flex flex-col gap-4 justify-center items-center w-full">
+                <div class="text-center flex items-center gap-4">
+                    <i class="fa-solid fa-clock"></i>
+                    <span class="text-xl  font-bold text-[#173849]">09:00 - 10:00</span>
+                </div>
+
+                <span class="text-green-500 px-4 py-2 bg-green-50 rounded-4xl font-bold">Disponible</span>
+
+                <span
+                    class="bg-green-700 text-center text-white px-8 py-2 rounded-4xl w-full cursor-pointer">Reservar</span>
+
+            </article>
+            <article
+                class="p-8 border border-l-8 border-green-400 rounded-xl flex flex-col gap-4 justify-center items-center w-full">
+                <div class="text-center flex items-center gap-4">
+                    <i class="fa-solid fa-clock"></i>
+                    <span class="text-xl  font-bold text-[#173849]">09:00 - 10:00</span>
+                </div>
+
+                <span class="text-green-500 px-4 py-2 bg-green-50 rounded-4xl font-bold">Disponible</span>
+
+                <span
+                    class="bg-green-700 text-center text-white px-8 py-2 rounded-4xl w-full cursor-pointer">Reservar</span>
+
+            </article>
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+</section>

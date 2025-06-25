@@ -1,4 +1,4 @@
-<main class="container mx-auto px-30 mt-20">
+<main class="container mx-auto px-30 mt-20 relative">
     <h1 class="text-center text-4xl font-bold text-[#173849] mx-auto ">
         Nuestras Canchas</h1>
     <div class="w-25 my-5 h-1 bg-gradient rounded-full mx-auto"></div>
@@ -47,7 +47,8 @@
                 </div>
 
             </div>
-            <button class="shadow-2xl drop-shadow-2xl border mt-10 cursor-pointer rounded-4xl px-6 py-2 ">
+            <button class="shadow-2xl drop-shadow-2xl border mt-10 cursor-pointer rounded-4xl px-6 py-2 "
+                (click)="openModal()">
                 <i class="fa-solid fa-clock"></i>
                 Ver horarios </button>
 
@@ -56,4 +57,5 @@
 
     </section>
 
+    <app-schedule />
 </main>
