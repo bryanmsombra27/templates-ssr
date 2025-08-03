@@ -11,10 +11,10 @@ export class Hero {
   image = input<string>('malteada-frape.jpg');
   imageAlt = input<string>('malteada y frape');
 
-  title = input<string>('Un verano con sabor');
+  title = input<string>('El café que inspira tu día');
   description = input<string>(
-    'Endulza tus dias con los favoritos de temporada.'
+    'Descubre nuestra selección de cafés artesanales y déjate llevar por una experiencia de sabor única. Cada taza, una nueva historia.'
   );
-  heroBackground = input<string>('#f0fbc1');
+  heroBackground = input<string>('#F5F5DC');
   invertOrder = input<boolean>(false);
 }
