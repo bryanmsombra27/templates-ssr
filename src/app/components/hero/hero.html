@@ -1,7 +1,8 @@
-<section class="max-w-[1200px]  grid grid-cols-2 min-h-[25vh] mx-auto mt-10">
+<!-- <section class="max-w-[1200px]  grid grid-cols-2 min-h-[25vh] mx-auto mt-10"> -->
+<section class="container px-0 grid-cols-1    grid  min-h-[25vh] mx-auto mt-10    md:px-20  md:grid-cols-2  ">
     <img src="{{image()}}" class="hero-image  {{invertOrder() && 'order-1' }} " alt="{{imageAlt()}}">
 
-    <div class="flex flex-col  justify-center" [ngStyle]="{'background':heroBackground()}">
+    <div class="flex flex-col p-5   justify-center" [ngStyle]="{'background':heroBackground()}">
         <h4 class="text-[#4A2C2A] text-4xl font-bold text-center">{{title()}}</h4>
         <p class="text-[#4A2C2A] text-lg font-semibold  text-center my-5">{{description()}}
         </p>
