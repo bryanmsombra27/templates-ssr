@@ -48,9 +48,9 @@
         </div>
 
     </div>
-    <div class="w-full  md:w-8/12  " [ngClass]="{'w-12/12':isActiveMenu()}">
-        <div class="w-full flex m-8 justify-between flex-col md:flex-row">
-            <nav class="flex gap-10 flex-col md:flex-row">
+    <div class="w-full  md:w-8/12   " [ngClass]="{'w-12/12 mx-auto':isActiveMenu()}">
+        <div class="w-full flex p-6  justify-between flex-col md:flex-row md:p-8">
+            <nav class="flex gap-10 flex-col mb-5 md:mb-0 md:flex-row">
                 <div>
                     <i class="fa-solid fa-bars text-2xl" (click)="toggleMenu()"></i>
                     <a href="#" class="text-xl ml-2">Menú</a>
@@ -61,7 +61,7 @@
                 </div>
             </nav>
 
-            <div class="flex flex-col   justify-end gap-8  items-center h-0 mt-10  md:mt-4 md:flex-row">
+            <div class="flex   justify-end gap-8  items-center h-0 my-10  md:mt-4 md:flex-row">
                 <p class="font-bold">
                     <span>Activo hasta </span>
                     <span class="text-blue-500">01/05/2026 (358 días restantes) </span>
