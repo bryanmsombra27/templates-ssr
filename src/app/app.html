@@ -1,8 +1,12 @@
-<section class="flex">
-    <div class="w-3/12 p-4  shadow-xl ">
-        <div class="flex items-center gap-2">
-            <i class="fa-solid fa-suitcase text-orange-600 text-4xl"></i>
-            <h1 class="text-4xl font-bold">Shadow Orderfix</h1>
+<section class="flex relative">
+    <div class="absolute md:relative md:h-auto bg-white  w-full h-full  bottom-0   md:w-3/12 p-4  shadow-xl "
+        [ngClass]="{'hidden':isActiveMenu() }">
+        <div class="flex items-center gap-2 justify-between">
+            <h1 class="text-4xl font-bold">Shadow Orders</h1>
+            <div class="block md:hidden">
+                <i class="fa-solid fa-bars text-2xl " (click)="toggleMenu()"></i>
+
+            </div>
         </div>
         <hr class="my-5 text-gray-200">
 
@@ -44,11 +48,11 @@
         </div>
 
     </div>
-    <div class="w-8/12 ">
-        <div class="w-full flex m-8 justify-between">
-            <nav class="flex gap-10">
+    <div class="w-full  md:w-8/12  " [ngClass]="{'w-12/12':isActiveMenu()}">
+        <div class="w-full flex m-8 justify-between flex-col md:flex-row">
+            <nav class="flex gap-10 flex-col md:flex-row">
                 <div>
-                    <i class="fa-solid fa-bars text-2xl"></i>
+                    <i class="fa-solid fa-bars text-2xl" (click)="toggleMenu()"></i>
                     <a href="#" class="text-xl ml-2">Menú</a>
                 </div>
                 <div>
@@ -57,7 +61,7 @@
                 </div>
             </nav>
 
-            <div class="flex justify-end gap-8  items-center h-0 mt-4">
+            <div class="flex flex-col   justify-end gap-8  items-center h-0 mt-10  md:mt-4 md:flex-row">
                 <p class="font-bold">
                     <span>Activo hasta </span>
                     <span class="text-blue-500">01/05/2026 (358 días restantes) </span>
@@ -71,7 +75,7 @@
         </div>
 
 
-        <div class="ml-10">
+        <div class="md:ml-10 container md:mx-5">
             <app-info-cards />
 
             <app-orders-status />
