@@ -1,6 +1,6 @@
 .hero {
-  --primary-gradient: #0e376b;
-  --secondary-gradient: #389078;
+  --primary-gradient: #003366;
+  --secondary-gradient: #004080;
   background-attachment: fixed;
   background-image: url("/hero.png"),
     linear-gradient(
@@ -18,8 +18,8 @@
 .btn-gradient {
   font-weight: bold;
   cursor: pointer;
-  --primary-color: #0f4561;
-  --secondary-color: #3b9a3f;
+  --primary-color: #32CD32;
+  --secondary-color: #228B22;
   background: linear-gradient(
     to right,
     var(--primary-color),
